@@ -1,7 +1,10 @@
+import {
+  TODO_ADD
+} from '../actionTypes'
 
 export function addTodo(payload) {
   return {
-    type: 'ADD_TODO',
+    type: TODO_ADD,
     payload: payload
   }
 }

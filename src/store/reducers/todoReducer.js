@@ -1,3 +1,6 @@
+import {
+  TODO_ADD
+} from '../actionTypes'
 
 let initState = {
   todolist: [1,2,3,4]
@@ -5,10 +8,9 @@ let initState = {
 
 export default function todoReducer(state=initState, action) {
   switch (action.type) {
-    case 'ADD_TODO':
+    case TODO_ADD:
       let newArr = [...state.todolist, action.payload]
       return {...state, ...{todolist: newArr}}
-      break;
     default:
       return state
   }

@@ -58,4 +58,7 @@ function mapActionToProps(dispatch) {  // mapMutations mapActions
   }
 }
 
+// Test  UI组件  User Interface
+// connect、withRouter 容器组件
+
 export default connect(mapStateToProps, mapActionToProps)(Test)
