@@ -10,12 +10,14 @@ import thunk from 'redux-thunk'
 import countReducer from './reducers/countReducer'
 import todoReducer from './reducers/todoReducer'
 import songReducer from './reducers/songReducer'
+import cartReducer from './reducers/cartReducer'
 
 // 合并所有的纯函数reducer，reducer用于改变store
 const rootReducer = combineReducers({
   countReducer,
   todoReducer,
-  songReducer
+  songReducer,
+  cartReducer
 })
 
 

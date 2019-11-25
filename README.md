@@ -61,3 +61,24 @@ const HOST = process.env.HOST || '0.0.0.0';
   * 第四步：重启项目即可。
 
 #### UI
+
+* 使用sass，先安装node-sass
+* 使用rem，移动端布局
+```js
+<script type="text/javascript">
+  function resetRootFZ(){
+    var oHtml = document.querySelector('html');
+    var w = oHtml.getBoundingClientRect().width;
+    // 设置根字体的大小等于html节点的宽度的十分之一
+    oHtml.style.fontSize = w/10 + 'px';
+  };
+  resetRootFZ();
+  // 当window窗口尺寸变化时，重新设置根字体的大小
+  window.addEventListener('resize',function(){
+    resetRootFZ();
+  });
+</script>
+```
+* 使用Ant-Design-Mobile
+  * 安装：`npm install antd-mobile --save`
+  * 样式引入：`import 'antd-mobile/dist/antd-mobile.css'`
